@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '4.1.14.2'
+gem 'rails', '4.2'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
@@ -34,4 +34,15 @@ gem 'rubocop'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+
+######################################################################
+#
+# UPGRADE TO RAILS 4.2
+#
+
+group :development do
+  gem 'web-console', '~> 2.0'
+end
 
