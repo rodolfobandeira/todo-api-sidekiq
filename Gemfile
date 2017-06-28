@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '4.2'
+gem 'rails', '~> 5.0', '>= 5.0.4'
 gem 'sqlite3'
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem 'jquery-rails'
@@ -39,8 +39,9 @@ gem 'rubocop'
 
 ######################################################################
 #
-# UPGRADE TO RAILS 4.2
+# UPGRADE TO RAILS 5
 #
+gem 'rails-controller-testing' # assert_template have been extracted to this gem
 
 group :development do
   gem 'web-console', '~> 2.0'
