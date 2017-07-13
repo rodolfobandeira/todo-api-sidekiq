@@ -23,6 +23,7 @@ gem 'sidekiq'
 
 gem 'rubocop'
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,5 +46,9 @@ gem 'rails-controller-testing' # assert_template have been extracted to this gem
 
 group :development do
   gem 'web-console', '~> 2.0'
+
+  # Security:
+  gem 'brakeman'
+  gem 'bundler-audit'
 end
 
